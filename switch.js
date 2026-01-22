@@ -13,3 +13,9 @@ switch (color) {
     default:
         console.log("color no encontrado");
 }
+
+// color="rosa"
+let numero = 5
+console.log("este es el valor original de 'numero'", numero)
+console.log("esto es una comparacion con ==", numero == "5")//correcto
+console.log("esto es una comparacion con ===", numero === 5)//incorrecto
