@@ -24,10 +24,29 @@ const color2 = document.getElementById("color2");
 
 color1.addEventListener("input", function () {
 
-    document.body.style.background = `linear-gradient(360deg, ${color1.value}, ${color2.value}) no-repeat fixed`;
+    document.body.style.background = `linear-gradient(to right, ${color1.value} 0%, ${color1.value} 30%, ${color2.value} 30%, ${color2.value} 100%) no-repeat fixed`;
 })
 
 color2.addEventListener("input", function () {
 
-    document.body.style.background = `linear-gradient(360deg, ${color1.value}, ${color2.value}) no-repeat fixed`;
+    document.body.style.background = `linear-gradient(to right, ${color1.value} 0%, ${color1.value} 30%, ${color2.value} 30%, ${color2.value} 100%) no-repeat fixed`;
 })
+
+
+
+const fruta = "manzana";
+
+switch (fruta) {
+    case "manzana":
+    case "pera":
+
+        console.log("es una fruta de arbol")
+        break;
+    case "fresa":
+    case "arandano":
+
+        console.log("es una baya");
+        break;
+    default:
+        console.log("fruta desconocida");
+}
